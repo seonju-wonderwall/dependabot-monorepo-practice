@@ -3,7 +3,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "yarn" # yarn 패키지 관리자 사용
+  - package-ecosystem: "npm" # npm 패키지 관리자 사용 (yarn, pnpm 등이 이에 해당)
     directory: "/" # package.json 위치
     schedule:
       interval: "daily" # 일간 업데이트 일정
