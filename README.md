@@ -124,3 +124,18 @@ Dependabot은 다음과 같은 전략으로 의존성을 업데이트합니다:
 - 보안 취약점이 있는 패키지에 대한 우선 업데이트
 - 최대 10개의 풀 리퀘스트 생성
 - 의존성 업데이트에 대한 라벨 자동 지정
+- 버전 업데이트 전략으로 'increase' 사용: 버전 요구 사항을 증가시키는 방식으로 업데이트합니다. (메이저 버전 업데이트도 포함할 수 있습니다.)
+
+### 'increase' 업데이트 전략 예시
+
+```
+New version 1.2.0
+ - increase: new constraint ^1.2.0
+ - increase-if-necessary: new constraint ^1.0.0
+ - widen: new constraint ^1.0.0
+
+New version 2.0.0
+ - increase: new constraint ^2.0.0
+ - increase-if-necessary: new constraint ^2.0.0
+ - widen: new constraint >=1.0.0 <3.0.0
+```
