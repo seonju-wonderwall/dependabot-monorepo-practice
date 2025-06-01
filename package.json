@@ -1,5 +1,6 @@
 {
   "name": "dependabot-monorepo-practice",
+  "description": "Old monorepo for Dependabot practice",
   "private": true,
   "scripts": {
     "build": "turbo run build",
