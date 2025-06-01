@@ -17,7 +17,7 @@ updates:
     security-updates-only: false # 모든 업데이트 확인 (보안 업데이트만으로 제한하지 않음)
 
     # 버전 업데이트 전략
-    versioning-strategy: auto
+    versioning-strategy: increase
 
     # 의존성 우선순위 설정
     allow:
